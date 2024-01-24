@@ -1,0 +1,51 @@
+.album-card {
+
+    /* orientation of direct child elements inside the component*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* dimensions of the component */
+    width: 800px; 
+
+    /* padding, borders, margin */
+    margin: 100px auto; 
+
+    /* chromatics */
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+
+    /* border radius */
+    border-radius: 12px;
+
+}
+
+.album-card > img {
+    width: 250px;
+    height: 250px;
+}
+
+.album-card-contents {
+    /* child elements are all block elements and will render vertically as desired; no need for flexbox in this instance */
+
+    /* dimensions */
+    width: 400px;
+
+    /* padding, borders, margin */
+    margin: 0 auto; 
+}
+
+.info-group {
+    /* orientation of direct child elements inside this element which is a div */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-group > img {
+    /* dimensions of the icons */
+    width: 18px;
+    height: 18px;
+}
+
+

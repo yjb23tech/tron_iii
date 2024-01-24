@@ -4,20 +4,23 @@ import genre_icon from "../public/images/genre_icon.png"
 
 const Card = (props) => {
     return (
-        <div>
+        <div className="album-card">
             <img src={`images/${props.album_card_song_cover_art}`} />
-            {/* <div>
+            <div className="album-card-contents">
                 <h2>{props.album_card_song_name}</h2>
-                <div>
-
+                <div className="info-group">
+                    <img src={album_icon} />
+                    <p>{props.album_card_album_name}</p>
                 </div>
-                <div>
-
+                <div className="info-group">
+                    <img src={artist_icon} />
+                    <p>{props.album_card_artist_name}</p>
                 </div>
-                <div>
-
+                <div className="info-group">
+                    <img src={genre_icon} />
+                    <p>{props.album_card_genre_name}</p>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
