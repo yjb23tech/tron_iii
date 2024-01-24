@@ -32,20 +32,42 @@
     width: 400px;
 
     /* padding, borders, margin */
-    margin: 0 auto; 
+    margin: 0px auto; 
+}
+
+.album-card-contents > h2 {
+    text-align: center;
 }
 
 .info-group {
     /* orientation of direct child elements inside this element which is a div */
     display: flex;
     flex-direction: row;
+    /* a test; let's see what happens; the below did work */
+    /* justify-content: center;  */
     align-items: center;
+
+    /* another test */
+    padding-left: 75px;
+
 }
 
 .info-group > img {
     /* dimensions of the icons */
     width: 18px;
     height: 18px;
+
+    /* padding, borders, margin */
+    margin-right: 5px;
 }
 
 
+/* My utility borders */
+
+.util-box-border-red {
+    border: 1px dotted red;
+}
+
+.util-box-border-blue {
+    border: 1px dotted blue;
+}
